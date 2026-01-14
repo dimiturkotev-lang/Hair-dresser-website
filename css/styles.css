@@ -280,3 +280,518 @@ footer .container {
         flex-direction: column;
     }
 }
+
+/* Page Title Section */
+.page-title {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.page-title h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Services Page - Full Service Cards */
+.service-card-full {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 30px;
+}
+
+.service-card-full:nth-child(even) {
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+}
+
+.service-card-full:nth-child(even) > * {
+    direction: ltr;
+}
+
+.service-card-full img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.service-card-full h3 {
+    color: var(--primary-color);
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.service-card-full p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.service-card-full ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.service-card-full li {
+    margin: 8px 0;
+    color: #666;
+}
+
+.service-card-full .cta-button {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Pricing Grid */
+.pricing {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.pricing h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.pricing > .container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.price-card {
+    background: var(--light-bg);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+}
+
+.price-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.price-card .price {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+.price-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Gallery */
+.gallery {
+    padding: 80px 0;
+    background-color: var(--light-bg);
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(139, 71, 137, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Mission Section */
+.mission {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.mission-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+.mission-item h3 {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.mission-item p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.mission-item ul {
+    margin-left: 20px;
+}
+
+.mission-item li {
+    margin: 10px 0;
+    color: #666;
+}
+
+/* Team Section */
+.team {
+    padding: 80px 0;
+    background-color: var(--light-bg);
+}
+
+.team h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.team > .container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.team-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    color: var(--primary-color);
+    font-size: 22px;
+    margin: 20px 0 10px 0;
+    padding: 0 20px;
+}
+
+.team-card .position {
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.team-card .bio {
+    color: #666;
+    padding: 0 20px 20px 20px;
+    font-size: 14px;
+}
+
+/* Why Choose Us */
+.why-choose {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.why-choose h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature {
+    background: var(--light-bg);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.feature p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Contact Page */
+.contact-info {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.contact-card {
+    background: var(--light-bg);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h3 {
+    color: var(--primary-color);
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.contact-card .small {
+    font-size: 14px;
+    color: #999;
+}
+
+.contact-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form-section {
+    padding: 80px 0;
+    background-color: var(--light-bg);
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.contact-form-section > .container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(139, 71, 137, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+
+.contact-form .cta-button {
+    width: 100%;
+}
+
+/* Map Section */
+.map-section {
+    padding: 80px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.map-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.map-placeholder {
+    background: var(--light-bg);
+    padding: 100px 20px;
+    border-radius: 8px;
+    color: #666;
+}
+
+.map-placeholder p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Responsive for service cards */
+@media (max-width: 768px) {
+    .service-card-full {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+
+    .service-card-full:nth-child(even) {
+        direction: ltr;
+        grid-template-columns: 1fr;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elegant Salon - Professional Hair Services</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <!-- Header with Navigation -->
@@ -16,10 +16,11 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,36 +30,36 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <img src="Images/Hairdresser.webp" alt="Professional Hairdresser" class="hero-image">
+            <img src="../Images/Hairdresser.webp" alt="Professional Hairdresser" class="hero-image">
             <div class="hero-content">
                 <h2>Welcome to Elegant Salon</h2>
                 <p>Experience premium hair care and styling services</p>
-                <button class="cta-button">Book an Appointment</button>
+                <button class="cta-button" onclick="location.href='contact.html'">Book an Appointment</button>
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section id="services" class="services">
+        <!-- Featured Services Section -->
+        <section class="featured-services">
             <div class="container">
-                <h2>Our Services</h2>
+                <h2>Our Featured Services</h2>
                 <div class="service-grid">
                     <div class="service-card">
-                        <img src="Images/man hair stylying.jpg" alt="Hair Cutting Service">
+                        <img src="../Images/man hair stylying.jpg" alt="Hair Cutting Service">
                         <h3>Hair Cutting</h3>
                         <p>Professional cuts tailored to your style and face shape</p>
                     </div>
                     <div class="service-card">
-                        <img src="Images/hair washing.jpg" alt="Hair Coloring Service">
+                        <img src="../Images/hair washing.jpg" alt="Hair Coloring Service">
                         <h3>Hair Coloring</h3>
                         <p>Vibrant colors with premium quality products</p>
                     </div>
                     <div class="service-card">
-                        <img src="Images/Saloon.jpg" alt="Hair Treatment Service">
+                        <img src="../Images/Saloon.jpg" alt="Hair Treatment Service">
                         <h3>Hair Treatment</h3>
                         <p>Restore and rejuvenate your hair with our treatments</p>
                     </div>
                     <div class="service-card">
-                        <img src="Images/Woman stylist.jpg" alt="Styling Service">
+                        <img src="../Images/Woman stylist.jpg" alt="Styling Service">
                         <h3>Styling</h3>
                         <p>Expert styling for special occasions</p>
                     </div>
@@ -66,21 +67,12 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
+        <!-- CTA Section -->
+        <section class="cta-section">
             <div class="container">
-                <h2>About Us</h2>
-                <p>At Elegant Salon, we believe everyone deserves to feel confident and beautiful. Our team of experienced stylists is dedicated to providing exceptional service and creating the perfect look for you.</p>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <p>Email: info@elegansalon.com</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Address: 123 Beauty Street, Fashion City, FC 12345</p>
+                <h2>Ready to Transform Your Look?</h2>
+                <p>Visit our Services page to see all available treatments or contact us to book your appointment today!</p>
+                <a href="services.html" class="cta-button">Explore All Services</a>
             </div>
         </section>
     </main>
