@@ -5,10 +5,10 @@
 }
 
 :root {
-    --primary-color: #8b4789;
-    --secondary-color: #d4a5d4;
+    --primary-color: #1b5e20;
+    --secondary-color: #2e7d32;
     --text-color: #333;
-    --light-bg: #f9f7f4;
+    --light-bg: #f1f8f6;
 }
 
 html {
@@ -29,10 +29,10 @@ body {
 
 /* Header and Navigation */
 header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
     color: white;
     padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(27, 94, 32, 0.3);
 }
 
 header .container {
@@ -48,6 +48,7 @@ header .container {
 
 .tagline {
     font-size: 14px;
+    color: #c8e6c9;
     font-style: italic;
 }
 
@@ -124,11 +125,14 @@ nav a:hover {
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
+    background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%);
+    color: white;
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
 }
 
 /* Services Section */
@@ -231,7 +235,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background-color: var(--primary-color);
+    background-color: #1b5e20;
     color: white;
     padding: 30px 0;
     text-align: center;
